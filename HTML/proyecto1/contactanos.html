@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="mi_servidor" method="post" autocomplete="off">
+    <legend>Informacion del paciente</legend>
+    <br>
+    <label for="idpersona">ID Persona</label>
+    <input type="text" id="idpersona" name="idpersona" readonly="true" value="100" disabled="true"/><br><br>
+    <!--al colocar disable se desabilita el campoo y no se envie el dato al servidor-->
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/><br><br>
+    
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Escribe tu Apellido"/> <br><br> 
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad"/> <br><br> 
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email"/> <br><br> 
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password"/> <br><br>   
+    
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="genero"/> <br><br> 
+
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="genero"/> <br><br> 
+
+    <label for="odontologos">Elige tu odontologo</label>    
+    <select name="odontologos" id="odontologos">
+        <option value="Sergio">Sergio</option>
+        <option value="Marcos">Marcos</option>
+        <option value="Carlos">Carlos</option>
+    </select>
+    <br><br> 
+    <label for="comentario">Agregar comentario</label>
+    <textarea name="comentario" id="comentario" role="2" cols="30"></textarea>
+    <br><br> 
+    <input type="submit" value="enviar">
+    <input type="reset" value="resetear"/>
+</form>
+</body>
+</html>

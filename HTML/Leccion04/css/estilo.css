@@ -1,0 +1,31 @@
+table, th, td{
+border: 1px solid black;
+/*border-collapse: collapse;*/
+padding: 10px;
+border-spacing: 5px;
+}
+tr{
+text-align: center;
+}
+td{
+    text-align: center;
+    }
+    caption {
+        color: blueviolet;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        line-height: 40px;
+
+    }
+    th{
+        color: bisque;
+        background-color: blueviolet;
+    }
+    /*pares even*/
+  tr:nth-child(even){
+    background-color: aqua;
+  }
+  /*impares odd*/
+  tr:nth-child(odd){
+    background-color: antiquewhite;
+  }
